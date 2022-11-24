@@ -5,10 +5,13 @@ import { useRouter } from "next/router";
 
 const Layout = ({ children }) => {
   const router = useRouter();
-  console.log(router.asPath);
+
   return (
     <>
-      {router.asPath === `${"/" || "/about"}` ? <Navbar /> : null}
+      {router.asPath !=
+      `${"/auth/login" || "/auth/register" || "/auth/forget"}` ? (
+        <Navbar />
+      ) : null}
 
       <div className={mainStyle.conatiner}>{children}</div>
     </>

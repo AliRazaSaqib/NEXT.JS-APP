@@ -1,9 +1,8 @@
-import aboutStyles from "../styles/About.module.css";
 const about = () => {
   return (
-    <div className={aboutStyles.about}>
-      <h1>Our Information</h1>
-      <p>
+    <div className="p-6">
+      <h1 className="text-3xl font-semibold">Our Information</h1>
+      <p className="pt-2 text-sm">
         Lorem Ipsum is simply dummy text of the printing and typesetting
         industry. Lorem Ipsum has been the industry's standard dummy text ever
         since the 1500s, when an unknown printer took a galley of type and

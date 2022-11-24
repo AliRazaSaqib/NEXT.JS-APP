@@ -2,11 +2,13 @@ import Link from "next/link";
 
 export default function article({ article }) {
   return (
-    <div>
-      <h1>{article.name}</h1>
-      <p>{article.body}</p>
+    <div className="p-6">
+      <h1 className="text-3xl font-semibold">{article.name}</h1>
+      <p className="text-sm pt-2">{article.body}</p>
       <br />
-      <Link href="/">Go Back</Link>
+      <Link href="/" className="text-red-500 cursor-pointer">
+        Go Back
+      </Link>
     </div>
   );
 }
